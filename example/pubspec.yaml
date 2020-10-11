@@ -1,0 +1,25 @@
+name: example
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  moor_fetcher:
+    path: ..
+  moor: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  moor_generator: any
+  build_runner: any
+
+
+flutter:
+  uses-material-design: true
