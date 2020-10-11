@@ -46,7 +46,7 @@ abstract class DatabaseFetcher<T> extends ChangeNotifier {
 
   @protected
   void handleReactiveChange(List<T> firstPage) {
-    if (resetOnChange || _items.length <= firstPage.length) {
+    if (resetOnChange || _items.length <= pageSize) {
       _items = firstPage;
       _allLoaded = firstPage.length < pageSize;
       notifyListeners();
